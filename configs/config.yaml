@@ -1,0 +1,20 @@
+batch_size: 110
+input_size: 112
+embd_shape: 512
+backbone_type: 'ResNet50'
+logit_type: 'angle'
+loss_func: 'compact_softmax'
+
+num_classes: 700
+num_samples: 42100
+train_dataset: 'asian_celeb_700.tfrecord'
+
+w_l2factor: 0.0005
+margin: 0.5
+logist_scale: 64
+base_lr: 0.000005
+epochs: 5
+save_steps: 200
+
+ckpt_dir: 'checkpoints'
+log_dir: 'logs'
